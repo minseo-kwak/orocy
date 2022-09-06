@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>o'Rocy | 오롯이</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <!-- data-aos="fade-up" data-aos-delay="100" -->
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common-header.css">
+    <link rel="stylesheet" href="css/common-footer.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <nav>
+                <button class="btn-show-menu"><span class="hide">전체메뉴 보기</span></button>
+                <ul class="gnb">
+                    <li><a href="#brand-story">브랜드 이야기</a></li>
+                    <li><a href="#orocy-candle">오롯이 캔들</a></li>
+                </ul>
+            </nav>
+            <h1>o' Rocy</h1>
+            <div class="user-menu">
+                <ul>
+                    <li><a href="#"><span class="hide">검색</span></a></li>
+                    <li><a href="#"><span class="hide">마이페이지</span></a></li>
+                    <li><a href="#"><span class="hide">장바구니</span></a></li>
+                </ul>
+            </div>
+        </header>
+        <div id="blur"></div>
+
+        <section id="visual">
+            <img src="img/cover.png" alt="메인 비주얼 이미지">
+            <img src="img/deco-line.svg" alt="데코 라인" class="deco-line">
+            <img src="img/deco.png" alt="라벨" class="deco-circle">
+            <h2>
+                봄이 내일 올 것 같은 밤바람.<br>
+                한 번의 태움에, 오롯이 순간을 담습니다.
+            </h2>
+        </section>
+
+        <section id="brand-story">
+            <h2>l’odeur parfume</h2>
+            <span>FRAGRANT PERFUME</span>
+            <h3>오롯이 올곧게 추구하는 철학</h3>
+            <p class="philosophy">
+                <span>모자람이 없이 온전하게.</span>
+                <p>캔들을 제작하는 것에서 고객에게 사용되기까지 모든 의사결정에 ‘지속적인 가치’ 를 기준으로 생각하며 진실된 가치를 통해 직접 소통하고자 합니다. <span id="more">그 가치를 통해 양초 그 이상의 의미로 새로운 변화의 중심에 서서 라이프스타일을 디자인합니다. 자연친화적이고 여유로운 삶을 지향하며 잔잔한 순간의 어울림을 통해 삶의 적절한 균형을 추구합니다 또한 오롯이캔들은 동물실험을 하지 않는 재료를 사용합니다.</span><button onclick="readMore()" id="btn-read-more">더 읽어보기</button></p>
+            </p>
+            <article>
+                <img src="img/label.png" alt="캔들 라벨">
+                <h4>BRINGING SPRING</h4>
+                <p>오롯이 캔들은 콩에서 추출한 미국 소이왁스와 꽃과 나무로부터 얻은 테라피 등급의 천연에센셜 오일 또는 프로그런스 오일을 블랜딩하여 제작한 친환경, 기능성 캔들입니다. 인공보조제는 사용하지 않으며 가장 자연스러움을 추구합니다.</p>
+            </article>
+        </section>
+        
+        <section id="orocy-candle">
+            <h2>o 'Rocy Candle</h2>
+            <div class="candle-1">
+                <div class="description">
+                    <h4>랑겔한스섬의 오후</h4>
+                    <p>
+                        유자의 상큼함에 튤립의 산뜻함,<br>
+                        그리고 버베나잎과 약쑥향을 더했습니다.<br>
+                        언덕을 넘으면 따스한 봄날의 들판이 펼쳐질까요?
+                    </p>
+                </div>
+                <div class="display-1">
+                    <img src="img/main-1.png" alt="랑겔한스섬의 오후">
+                    <!-- <span class="hide">상품 이미지</span> -->
+                    <p>
+                        바람이 불면 너의 스웨터 향기가 코끝을 스치고<br>
+                        그 바람길 따라 난 날아오르는 수줍은 허밍<br><br>
+                        - 소녀를 만나다, 조규찬
+                    </p>
+                </div>
+            </div>
+            <div class="candle-2">
+                <div class="grid-visual">
+                    <!-- <div class="display-2">
+                        <span class="hide">상품 이미지</span>
+                    </div> -->
+                    <img src="img/main-2.png" alt="바람도 없던 따뜻한 날의 꽃집" class="display-2">
+                    <div class="visual-1"></div>
+                    <div class="visual-2"></div>
+                    <div class="visual-3"></div>
+                    <div class="visual-4"></div>
+                </div>
+                <div class="description">
+                    <h4>바람도 없던<br>따뜻한 날의 꽃집</h4>
+                    <p>
+                        쟈스민 꽃잎을 메인으로,<br>
+                        동백꽃과 월하향을 더했습니다.<br>
+                        달달한 꽃향만이 아닌<br>
+                        초록 잎사귀의 느낌이 더해져<br>
+                        은은하게 아름다워요.<br>
+                    </p>
+                </div>
+            </div>
+            <div class="candle-more">
+                <h5>더 많은 이야기를 듣고 싶다면,</h5>
+                <span>more stories 'bout us</span>
+                <div class="swiper moreItems">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/candle09.png" alt="스푸트니크의 연인">
+                            <div class="info">
+                                <p class="title">스푸트니크의 연인</p>
+                                <span class="fragrance"># 작약, 플로럴</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/candle08.png" alt="이 아침 축복처럼 꽃비가">
+                            <div class="info">
+                                <p class="title">이 아침 축복처럼 꽃비가</p>
+                                <span class="fragrance"># 프리지아, 복숭아꽃</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/candle03.png" alt="석류의 낭독회">
+                            <div class="info">
+                                <p class="title">석류의 낭독회</p>
+                                <span class="fragrance"># 석류, 머스크, 블랙페퍼</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/candle07.png" alt="수수께끼 풀이는 저녁식사 후에">
+                            <div class="info">
+                                <p class="title">수수께끼 풀이는 저녁식사 후에</p>
+                                <span class="fragrance"># 사이프러스, 패츌리</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/candle05.png" alt="해뜨는 나라의 공장">
+                            <div class="info">
+                                <p class="title">해뜨는 나라의 공장</p>
+                                <span class="fragrance"># 목화, 코튼</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="ft-top">
+                <div class="sub-title">
+                    <h2>오롯이 이야기를 구독하시면 다양한 소식을 전해 드립니다.</h2>
+                    <p>be our member</p>
+                </div>
+                <form action="#" method="post" id="email-form" name="email-form">
+                    <label for="userEmail">이메일 주소</label>
+                    <input type="text" id="userEmail" name="userEmail" placeholder="여기에 입력하세요.">
+                    <button type="button" class="btn-subscribe">구독하기</button>
+                </form>
+            </div>
+            <div class="ft-bottom">
+                <h5>o' Rocy</h5>
+                <div class="ft-flexbox">
+                    <div class="customer-service">
+                        <div class="contact">
+                            <p class="ft-title">고객 센터</p>
+                            <ul class="ft-list">
+                                <li>1566-1234</li>
+                                <li>orocy@mail.com</li>
+                                <li>평일 10a.m. - 18p.m.</li>
+                                <li>주말 및 공휴일 휴무</li>
+                            </ul>
+                        </div>
+                        <div class="service">
+                            <p class="ft-title">서비스 이용하기</p>
+                            <ul class="ft-list">
+                                <li><a href="#">환불 및 교환 정책</a></li>
+                                <li><a href="#">자주 묻는 질문</a></li>
+                                <li><a href="#">개인정보 처리방침</a></li>
+                                <li><a href="#">서비스 이용약관</a></li>
+                                <li><a href="#">운영관리방침</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="company-info">
+                        <div class="brand">
+                            <p class="ft-title">우리 브랜드에 관하여</p>
+                            <ul>
+                                <li>대표이사 : OOO</li>
+                                <li>개인정보보호책임자 : OOO</li>
+                                <li>서울특별시 양천구 목동동로 123 1234동 1234호</li>
+                                <li>사업자등록번호 : 12345678910</li>
+                                <li>통신판매업 신고 : 2022-서울양천-1234</li>
+                                <li class="business"><a href="#">사업자 정보확인 ></a></li>
+                            </ul>
+                        </div>
+                        <div class="sns">
+                            <p class="ft-title">소식 전해 듣기</p>
+                            <ul class="sns-list">
+                                <li><a href="#"><span class="hide">인스타그램</span></a></li>
+                                <li><a href="#"><span class="hide">페이스북</span></a></li>
+                                <li><a href="#"><span class="hide">유튜브</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="copyright">
+                Copyright &copy; 오롯이 all rights reserved.
+            </span>
+        </footer>
+
+        <div id="btn-top"><span class="hide">위로 올라가기</span></div>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".moreItems", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      AOS.init({
+        easing: 'ease',
+        duration: 1000,
+        once: true
+      });
+    </script>
+</body>
+</html>
