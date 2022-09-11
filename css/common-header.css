@@ -7,7 +7,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 2;
+    z-index: 4;
 }
 header h1 {
     font-family: 'Homemade Apple', sans-serif;
@@ -16,8 +16,8 @@ header h1 {
     left: 80px;
 }
 .btn-show-menu {
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     background-image: url(../img/i_menu.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -35,8 +35,11 @@ header h1 {
     width: 100%;
     padding: 0 25px;
 }
-.gnb li:first-child {
+.gnb li {
     border-bottom: 1px solid rgb(204, 204, 204, 0.6);
+}
+.gnb li:last-child {
+    border: none;
 }
 .gnb li a {
     padding: 25px 0;
@@ -49,9 +52,9 @@ header h1 {
     display: flex;
 }
 .user-menu li {
-    width: 30px;
-    height: 30px;
-    margin: 0 10px;
+    width: 24px;
+    height: 24px;
+    margin-left: 16px;
     cursor: pointer;
 
     background-image: url(../img/i_search.svg);
@@ -71,9 +74,10 @@ header h1 {
     background-color: rgba(255,255,255,0.5);
     backdrop-filter: blur(5px);
     position: fixed;
+    top: -100px;
     left: 0;
     transition: 0.5s;
-    z-index: 1;
+    z-index: 3;
 }
 #btn-top {
     width: 40px;
@@ -88,7 +92,7 @@ header h1 {
     bottom: 60px;
     right: 25px;
     transition: 0.5s;
-    z-index: 1;
+    z-index: 3;
     cursor: pointer;
 }
 
@@ -111,13 +115,14 @@ header h1 {
 @media screen and (min-width: 1280px) {
     header {
         padding: 0 100px;
-        margin-top: 0px;
+        margin-top: 20px;
     }
     header h1 {
         font-size: 26px;
         position: absolute;
         left: 50%;
         transform: translate(-50%);
+        transition: 0.5s;
     }
     .btn-show-menu {
         display: none;
@@ -158,14 +163,21 @@ header h1 {
         transform: scaleX(1);
      }
     
-    .gnb li:first-child {
-        margin-right: 100px;
+    .gnb li {
+        margin-right: 80px;
+        border: none;
     }
-
+    .gnb li:last-child {
+        margin: 0px;
+    }
     .user-menu li {
-        margin: 0 30px;
+        margin: 0 20px;
+        transition: 0.5s;
     }
     #blur {
-        height: 70px;
+        height: 100px;
+    }
+    header h1:hover, .user-menu li:hover {
+        opacity: 0.6;
     }
 }

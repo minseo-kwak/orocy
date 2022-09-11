@@ -1,0 +1,238 @@
+:root {
+    --swiper-theme-color: #333;
+}
+
+/* mobile */
+section {}
+section h2 {
+    font-family: 'Homemade Apple';
+    font-size: 26px;
+    color: #707070;
+    text-align: center;
+}
+
+#visual {
+    position: relative;
+}
+.main-visual {
+    height: 350px;
+    width: 100vw;
+    object-fit: cover;
+    object-position: 40%;
+}
+.deco-line {
+    display: none;
+}
+.deco-circle {
+    position: absolute;
+    left: 25px;
+    width: 90px;
+    bottom: -20px;
+}
+#visual h2 {
+    position: absolute;
+    text-align: right;
+    right: 25px;
+    bottom: 80px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #333;
+}
+#visual h2::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    width: 96px;
+    height: 4px;
+    background-color: #fff;
+}
+
+
+#brand-story {
+    margin-top: 40px;
+}
+.center-box {
+    text-align: center;
+}
+.center-box h2 {
+    position: relative;
+    margin-bottom: 60px;
+    display: inline-block;
+}
+.center-box h2 span {
+    font-size: 12px;
+    font-family: 'Pretendard';
+    position: absolute;
+    left: 0;
+    bottom: -24px;
+}
+.philosophy {
+    padding: 0 25px;
+}
+.philosophy h3 {
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.philosophy .slogan {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+.philosophy p {
+    line-height: 1.5;
+}
+#more {
+    display: none;
+}
+#btn-read-more {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #B0CBD5;
+    border-radius: 20px;
+    width: 110px;
+    height: 36px;
+    margin-top: 12px;
+}
+
+#brand-story article {
+    margin-top: 130px;
+    background-color: #FAFAFA;
+    position: relative;
+}
+#brand-story article img {
+    width: 220px;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#brand-story article h4 {
+    font-family: 'Cormorant';
+    padding-top: 330px;
+    font-size: 44px;
+    text-align: center;
+    color: #B0CBD5;
+}
+#brand-story article p {
+    display: block;
+    padding: 0 25px;
+    padding-bottom: 80px;
+    line-height: 1.5;
+    margin-top: 40px;
+}
+
+#main-item {
+    margin-top: 100px;
+}
+.description {
+    padding: 40px 0px 90px 0px;
+}
+.description h4 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.description p {
+    line-height: 1.5;
+}
+
+.candle-1 {
+    margin-top: 44px;
+    padding: 0 25px;
+}
+.candle-1 .description {
+    text-align: right;
+}
+.candle-1 .description h4 {
+    color: #B0CBD5;
+}
+.candle-1 .display-1 {
+    position: relative;
+}
+.candle-1 .display-1 p {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.candle-2 {}
+.candle-2 .grid-visual {}
+.candle-2 .grid-visual .display-2 {}
+.candle-2 .grid-visual div {}
+.candle-2 .grid-visual div.visual-3 {}
+.candle-2 .description {
+    margin: 0 25px;
+}
+.candle-2 .description h4 {
+    color: #AF9598;
+    line-height: 1.35;
+}
+
+.candle-more {
+    background-color: #FAFAFA;
+    padding: 60px 0;
+    padding-left: 25px;
+}
+.candle-more h5 {
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+.candle-more h5 span {
+    font-family: 'Homemade Apple';
+    font-weight: normal;
+    color: #dfdfdf;
+    position: absolute;
+    right: 25px;
+    bottom: -14px;
+    z-index: 0;
+}
+.moreItems {
+    padding-right: 25px;
+    padding-bottom: 36px;
+}
+.moreItems .swiper-slide {
+    position: relative;
+}
+.moreItems .swiper-slide img {
+    height: 170px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.moreItems .swiper-slide .info {
+    display: none;
+}
+
+.moreItems .swiper-slide .btn-wish {
+    display: none;
+}
+.moreItems .swiper-pagination {}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    .moreItems .swiper-slide .btn-wish {
+        display: block;
+        height: 30px;
+        width: 40px;
+        position: absolute;
+        bottom: 16px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        background-image: url(../img/i_detail.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+        border: 1px solid #fff;
+        border-radius: 14px;
+    }
+    .moreItems .swiper-slide .info .title {}
+    .moreItems .swiper-slide .info .fragrance {}
+}
+/* pc */

@@ -39,4 +39,38 @@ $(function(){
      }, 500);
      return false;
      });
+
+  //더 읽어보기
+  $('#btn-read-more').click(function(){
+    $(this).fadeOut(800);
+    $('#more').fadeIn(800);
+  })
+
+
+  //플러그인
+  var swiper = new Swiper(".moreItems", {
+  slidesPerView: 2.3,
+  spaceBetween: 20,
+  // 반응형 분기점
+  breakpoints: {
+      768: {
+          slidesPerView: 2.5,
+          spaceBetween: 20
+      },
+      1280: {
+          slidesPerView: 4.5,
+          spaceBetween: 20 
+      }
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+AOS.init({
+  easing: 'ease',
+  duration: 1000,
+  once: true
+});
 })

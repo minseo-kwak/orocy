@@ -1,16 +1,10 @@
 @charset "utf-8";
 @import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
 @font-face {
-	font-family: 'Canela';
+	font-family: 'Cormorant';
 	font-style: normal;
 	font-weight: normal;
-	src: url('../font/Canela-Medium-Trial.otf') format('opentype');
-}
-@font-face {
-	font-family: 'Canela';
-	font-style: normal;
-	font-weight: bold;
-	src: url('../font/Canela-Bold-Trial.otf') format('opentype');
+	src: url('../font/Cormorant-VariableFont_wght.ttf') format('truetype');
 }
 @font-face {
 	font-family: 'Homemade Apple';
@@ -53,26 +47,10 @@ img {
 }
 body {
     font-family: 'Pretendard', sans-serif;
-    font-weight: 200;
+    font-weight: 250;
     color: #333;
     user-select: none;
 }
-
-/* 양쪽 마진 (모바일, 태블릿, 데스크톱 순) */
-.inner-wrap {
-    margin: 0 25px;
-}
-@media screen and (min-width: 768px) {
-    .inner-wrap {
-        margin: 0 60px;
-    }
-}
-@media screen and (min-width: 1280px) {
-    .inner-wrap {
-        margin: 0 120px;
-    }
-}
-
   
 button {
     background-color: transparent;
