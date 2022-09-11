@@ -89,7 +89,7 @@ header h1 {
     background-position: center;
     background-size: 60%;
     position: fixed;
-    bottom: 60px;
+    bottom: -60px;
     right: 25px;
     transition: 0.5s;
     z-index: 3;

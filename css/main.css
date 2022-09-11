@@ -38,6 +38,7 @@ section h2 {
     font-weight: 700;
     line-height: 1.4;
     color: #333;
+    font-family: 'Pretendard';
 }
 #visual h2::after {
     content: '';
@@ -51,14 +52,14 @@ section h2 {
 
 
 #brand-story {
-    margin-top: 40px;
+    margin-top: 80px;
 }
 .center-box {
     text-align: center;
 }
 .center-box h2 {
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     display: inline-block;
 }
 .center-box h2 span {
@@ -73,14 +74,14 @@ section h2 {
 }
 .philosophy h3 {
     font-weight: 600;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 .philosophy .slogan {
     display: inline-block;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 .philosophy p {
-    line-height: 1.5;
+    line-height: 1.6;
 }
 #more {
     display: none;
@@ -119,7 +120,7 @@ section h2 {
     display: block;
     padding: 0 25px;
     padding-bottom: 80px;
-    line-height: 1.5;
+    line-height: 1.6;
     margin-top: 40px;
 }
 
@@ -135,7 +136,7 @@ section h2 {
     margin-bottom: 16px;
 }
 .description p {
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .candle-1 {
@@ -157,15 +158,10 @@ section h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 250px;
-    line-height: 1.5;
+    line-height: 1.6;
     font-size: 14px;
 }
 
-.candle-2 {}
-.candle-2 .grid-visual {}
-.candle-2 .grid-visual .display-2 {}
-.candle-2 .grid-visual div {}
-.candle-2 .grid-visual div.visual-3 {}
 .candle-2 .description {
     margin: 0 25px;
 }
@@ -202,7 +198,7 @@ section h2 {
     position: relative;
 }
 .moreItems .swiper-slide img {
-    height: 170px;
+    height: 250px;
     object-fit: cover;
     border-radius: 20px;
 }
@@ -217,12 +213,159 @@ section h2 {
 
 /* tablet */
 @media screen and (min-width: 768px) {
+    section h2 {
+        font-size: 30px;
+    }
+    .main-visual {
+        height: inherit;
+        object-position: 0%;
+    }
+    .deco-circle {
+        left: 60px;
+        width: 124px;
+        bottom: 10px;
+    }
+    #visual h2 {
+        font-size: 26px;
+        right: 60px;
+        bottom: 120px;
+    }
+
+    .center-box h2 {
+        margin-bottom: 100px;
+    }
+    .center-box h2 span {
+        font-size: 14px;
+    }
+    .philosophy {
+        padding: 0 60px;
+    }
+    #more {
+        display: inline;
+    }
+    #btn-read-more {
+        display: none;
+    }
+
+    #brand-story article {
+        margin-top: 180px;
+    }
+    #brand-story article img {
+        width: 280px;
+        top: 200px;
+    }
+    #brand-story article h4 {
+        font-size: 80px;
+        padding-top: 410px;
+    }
+    #brand-story article p {
+        padding: 0 60px;
+        padding-bottom: 90px;
+    }
+
+    #main-item {
+        margin-top: 120px;
+    }
+    .description {
+        padding: 70px 0px 200px 0px;
+    }
+    .description h4 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    .description p {
+        font-size: 18px;
+    }
+
+    .candle-1 {
+        margin-top: 96px;
+        padding: 0 60px;
+    }
+    .candle-1 .display-1 img {
+        width: 440px;
+        margin-left: auto;
+        display: block;
+    }
+    .candle-1 .display-1 p {
+        font-size: 16px;
+        width: 286px;
+        right: -60px;
+        bottom: 40px;
+        transform: none;
+    }
+
+    .candle-2 {
+        padding-right: 60px;
+    }
+    .candle-2 .grid-visual {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column: 1 / span 2;
+        gap: 30px;
+    }
+    .candle-2 .grid-visual .display-2 {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 2;
+    }
+    .candle-2 .grid-visual div {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .candle-2 .grid-visual .visual-1 {
+        background-image: url(../img/visual-1.png);
+    }
+    .candle-2 .grid-visual .visual-3 {
+        background-image: url(../img/visual-3.png);
+    }
+    .candle-2 .grid-visual .visual-2,
+    .candle-2 .grid-visual .visual-4 {
+        display: none;
+    }
+    .candle-2 .description {
+        margin: 0 60px;
+    }
+
+    .candle-more {
+        padding: 80px 0;
+        padding-left: 60px;
+    }
+    .candle-more h5 {
+        font-size: 20px;
+        margin-bottom: 80px;
+    }
+    .candle-more h5 span {
+        right: 60px;
+    }
+    .moreItems {
+        padding-right: 60px;
+    }
+    .moreItems .swiper-slide img {
+        height: 350px;
+        filter: brightness(70%);
+    }
+    .moreItems .swiper-slide .info {
+        display: block;
+        position: absolute;
+        top: 40px;
+        left: 20px;
+        color: #fff;
+        mix-blend-mode: screen;
+        width: 100%;
+    }
+    .moreItems .swiper-slide .info .title {
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+    .moreItems .swiper-slide .info .fragrance {
+        font-size: 14px;
+    }
     .moreItems .swiper-slide .btn-wish {
         display: block;
         height: 30px;
         width: 40px;
         position: absolute;
-        bottom: 16px;
+        bottom: 20px;
         left: 50%;
         transform: translate(-50%, 0%);
         background-image: url(../img/i_detail.svg);
@@ -232,7 +375,10 @@ section h2 {
         border: 1px solid #fff;
         border-radius: 14px;
     }
-    .moreItems .swiper-slide .info .title {}
-    .moreItems .swiper-slide .info .fragrance {}
+    .moreItems .swiper-slide .btn-wish:hover {
+        transform: scale(1.1);
+        transform-origin: 0 100%;
+    }
+    
 }
 /* pc */

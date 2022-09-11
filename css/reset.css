@@ -1,6 +1,12 @@
 @charset "utf-8";
 @import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
 @font-face {
+	font-family: 'Canela';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../font/Canela-Medium-Trial.otf') format('opentype');
+}
+@font-face {
 	font-family: 'Cormorant';
 	font-style: normal;
 	font-weight: normal;
@@ -51,6 +57,22 @@ body {
     color: #333;
     user-select: none;
 }
+
+/* 양쪽 마진 (모바일, 태블릿, 데스크톱 순) */
+.inner-wrap {
+    margin: 0 25px;
+}
+@media screen and (min-width: 768px) {
+    .inner-wrap {
+        margin: 0 60px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .inner-wrap {
+        margin: 0 120px;
+    }
+}
+
   
 button {
     background-color: transparent;
