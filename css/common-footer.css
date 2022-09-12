@@ -62,7 +62,7 @@
     font-weight: 22px;
     color: #9A9A9A;
     text-align: center;
-    margin: 50px 0 30px 0;
+    margin: 80px 0 50px 0;
 }
 .ft-bottom .ft-flexbox {
     font-size: 14px;
@@ -133,7 +133,7 @@
     display: block;
     margin: 0 25px;
     margin-top: 50px;
-    border-top: 1px solid #8E8E8E;
+    border-top: 1px solid #dfdfdf;
     padding: 20px 0 60px 0;
     font-size: 12px;
     color: #8E8E8E;
@@ -170,7 +170,7 @@
     }
     .ft-bottom h5 {
         font-size: 26px;
-        margin: 60px 0 60px 0;
+        margin: 100px 0 70px 0;
     }
     .ft-bottom .ft-flexbox > div {
         margin-bottom: 60px;
@@ -228,7 +228,7 @@
         right: 100px;
     }
     .ft-bottom {
-        padding: 0 100px;
+        padding: 0 120px;
     }
     .ft-bottom h5 {
         margin: 120px 0 60px 0;

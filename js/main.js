@@ -25,7 +25,7 @@ $(function(){
   });
 
   var wd = $(window).width();
-    if(wd <= 768) {
+    if(wd <= 1280) {
         $('.gnb li a').click(function(){
             $('.gnb').fadeOut();
             $('.btn-show-menu').removeClass('btn-hide-menu');
@@ -44,7 +44,16 @@ $(function(){
   $('#btn-read-more').click(function(){
     $(this).fadeOut(800);
     $('#more').fadeIn(800);
-  })
+  });
+
+  
+
+  //pc hover 애니메이션
+  if($(window).width() > 1280) {
+    $('.img-box, .display-2').hover(function(){
+      $(this).nextAll('p').toggleClass('visible');
+    });
+  }
 
 
   //플러그인
@@ -68,9 +77,9 @@ $(function(){
   },
 });
 
-AOS.init({
-  easing: 'ease',
-  duration: 1000,
-  once: true
-});
+  AOS.init({
+    easing: 'ease',
+    duration: 1000,
+    once: true
+  });
 })
